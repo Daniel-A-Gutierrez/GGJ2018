@@ -10,6 +10,8 @@ TagManager:
   - 4Option2
   - 4Option3
   - 4Option4
+  - Continue Button
+  - Monologue
   layers:
   - Default
   - TransparentFX
