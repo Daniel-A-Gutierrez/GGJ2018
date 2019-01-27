@@ -42,6 +42,7 @@ public class dialogueManager : MonoBehaviour
 		Option2 = GameObject.FindGameObjectWithTag("4Option2");
 		Option3 = GameObject.FindGameObjectWithTag("4Option3");
 		Option4 = GameObject.FindGameObjectWithTag("4Option4");
+		PrepareMonologue();
     }
 
 
@@ -55,7 +56,7 @@ public class dialogueManager : MonoBehaviour
 		//	sentences.Enqueue(sentence);
 		//}
 
-		DisplayNextSentence();
+		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
 	}
 
 	public void DisplayNextSentence()
@@ -66,14 +67,14 @@ public class dialogueManager : MonoBehaviour
 			EndDialogue();
 			return;
 		}
-		if(currentDialogue.decisions == 0)
+		else if(currentDialogue.decisions == 0)
 		{
 			PrepareMonologue();
 			currentDialogue = gd[""+ currentDialogue.links[0]];
-			monologueText.text = currentDialogue.text;
+			monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
 			//set the clipart
 		}
-		if(currentDialogue.decisions==2)
+		else if(currentDialogue.decisions==2)
 		{
 			Prepare2Choice();
 			DialogA = gd[""+ currentDialogue.links[0]];
@@ -85,8 +86,8 @@ public class dialogueManager : MonoBehaviour
 			//display hidden buttons/generate buttons using currentText.decisions as N
 			//
 		}
-		if(currentDialogue.decisions==3) {Debug.Log("there is no 3 choice system");}
-		if(currentDialogue.decisions==4)
+		else if(currentDialogue.decisions==3) {Debug.Log("there is no 3 choice system");}
+		else if(currentDialogue.decisions==4)
 		{
 			Prepare4Choice();
 			Dialog1 = gd[""+ currentDialogue.links[0]];
@@ -129,8 +130,8 @@ public class dialogueManager : MonoBehaviour
 
 	void Prepare4Choice()
 	{
-		monologue.SetActive(true);
-		continueButton.SetActive(true);
+		monologue.SetActive(false);
+		continueButton.SetActive(false);
 		OptionA.SetActive(false);
 		OptionB.SetActive(false);
 		Option1.SetActive(true);
@@ -139,43 +140,43 @@ public class dialogueManager : MonoBehaviour
 		Option4.SetActive(true);
 	}
 	//remember to set the clipart
-	void ButtonA()
+	public void ButtonA()
 	{
 		PrepareMonologue();
 		currentDialogue = gd[""+ DialogA.links[0]];
-		monologueText.text = currentDialogue.text;
+		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
 	}
 
-	void ButtonB()
+	public void ButtonB()
 	{
 		PrepareMonologue();
 		currentDialogue = gd[""+ DialogA.links[0]];
-		monologueText.text = currentDialogue.text;
+		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
 	}
 
-	void Button1()
+	public void Button1()
 	{
 		PrepareMonologue();
 		currentDialogue = gd[""+ Dialog1.links[0]];
-		monologueText.text = currentDialogue.text;		
+		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
 	}
-	void Button2()
+	public void Button2()
 	{
 		PrepareMonologue();
 		currentDialogue = gd[""+ Dialog2.links[0]];
-		monologueText.text = currentDialogue.text;		
+		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
 	}
-	void Button3()
+	public void Button3()
 	{
 		PrepareMonologue();
 		currentDialogue = gd[""+ Dialog3.links[0]];
-		monologueText.text = currentDialogue.text;		
+		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
 	}
-	void Button4()
+	public void Button4()
 	{
 		PrepareMonologue();
 		currentDialogue = gd[""+ Dialog4.links[0]];
-		monologueText.text = currentDialogue.text;		
+		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
 	}
 	
 
