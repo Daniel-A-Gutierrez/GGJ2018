@@ -7,15 +7,8 @@ public class dialogueTrigger : MonoBehaviour
 
 	public Dialogue dialogue;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public void TriggerDialogue()
+	{
+		FindObjectOfType<dialogueManager>().StartDialogue(dialogue);
+	}
 }
