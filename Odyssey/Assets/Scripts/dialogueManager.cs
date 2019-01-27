@@ -48,6 +48,7 @@ public class dialogueManager : MonoBehaviour
 		Option3 = GameObject.FindGameObjectWithTag("4Option3");
 		Option4 = GameObject.FindGameObjectWithTag("4Option4");
 		portraitGO = GameObject.FindGameObjectWithTag("Portrait");
+		StartDialogue();	
     }
 
 	void setClipart()
@@ -60,7 +61,8 @@ public class dialogueManager : MonoBehaviour
 		}
 	}
 
-	public void StartDialogue(Dialogue dialogue) 
+
+	public void StartDialogue() 
 	{
 		currentDialogue = gd["1"];
 		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
@@ -221,6 +223,14 @@ public class dialogueManager : MonoBehaviour
 	void EndDialogue() //also hide text field, and all related elements.
 	{
 		Debug.Log("End of conversation");
+		monologue.SetActive(false);
+		continueButton.SetActive(false);
+		OptionA.SetActive(false);
+		OptionB.SetActive(false);
+		Option1.SetActive(false);
+		Option2.SetActive(false);
+		Option3.SetActive(false);
+		Option4.SetActive(false);
 		portraitGO.SetActive(false);
 	}
 
