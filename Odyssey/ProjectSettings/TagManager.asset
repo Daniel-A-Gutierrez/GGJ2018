@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - 2Ooption1
+  - 2Option2
+  - 4Option1
+  - 4Option2
+  - 4Option3
+  - 4Option4
   layers:
   - Default
   - TransparentFX
