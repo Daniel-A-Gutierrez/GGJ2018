@@ -37,7 +37,7 @@ public class AudioManager : MonoBehaviour
     }
     void Start()
     {
-    	Play("Theme");     //Plays theme at start
+    	Play("Daytime");     //Plays theme at start
     }
 
     public void Play (string name)
