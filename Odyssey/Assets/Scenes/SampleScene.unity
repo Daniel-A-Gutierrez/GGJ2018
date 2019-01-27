@@ -789,12 +789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 166ae48484c02b442a6f908b7e13781f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Robert
-    sentences:
-    - "THis is a test sentence\t"
-    - "it isnt very long\t"
-    - hello
+  dialogue: {fileID: 0}
 --- !u!114 &359536250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1482,6 +1477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 683091762}
   - component: {fileID: 683091763}
+  - component: {fileID: 683091764}
   m_Layer: 0
   m_Name: Dialogue Manager
   m_TagString: Untagged
@@ -1515,8 +1511,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32f772689c0bb96438a1dc19e9f234b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
+  nameText: {fileID: 144217701}
+  dialogueText: {fileID: 285312439}
+  currentDialogue: {fileID: 0}
+--- !u!114 &683091764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683091761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c87e42f865f074cb7184547be43201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogCsvPath: Test_Sheet.csv
 --- !u!1 &908902902
 GameObject:
   m_ObjectHideFlags: 0

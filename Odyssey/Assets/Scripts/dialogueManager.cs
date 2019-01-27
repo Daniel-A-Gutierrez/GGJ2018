@@ -50,6 +50,14 @@ public class dialogueManager : MonoBehaviour
 			//set the clipart
 			
 		}
+		if(currentDialogue.decisions>0)
+		{
+			//get rid of current text
+			//hide ok button
+			//display hidden buttons/generate buttons using currentText.decisions as N
+			
+
+		}
 		//if decisions = 0 , ok button and load next, and change buttons, etc.
 		//if decisions >0 load buttons with specific dialogues
 	}
