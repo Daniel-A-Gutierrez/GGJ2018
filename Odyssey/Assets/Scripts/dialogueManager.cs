@@ -25,10 +25,10 @@ public class dialogueManager : MonoBehaviour
 
 		sentences.Clear();
 
-		foreach(string sentence in dialogue.sentences)
-		{
-			sentences.Enqueue(sentence);
-		}
+		//foreach(string sentence in dialogue.sentences)
+		//{
+		//	sentences.Enqueue(sentence);
+		//}
 
 		DisplayNextSentence();
 	}
