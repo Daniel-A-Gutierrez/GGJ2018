@@ -14,7 +14,7 @@ public class DialogImporter : MonoBehaviour
     public Dictionary<string,Dialogue> GameDialog;
     public Dictionary<string,Action> AllActions;
     //there will have to be a game manager to store all the flags
-    void Start()
+    void Awake()
     {
         AllActions = new Dictionary<string,Action>();
         GameDialog = new Dictionary<string,Dialogue>();
