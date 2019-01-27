@@ -9,6 +9,7 @@ public class Sound
     public string name;
     public AudioClip clip;
     [Range(0f,1f)]
+    
     public float volume;
     [Range(.1f, 3f)]
     public float pitch;
@@ -17,4 +18,10 @@ public class Sound
 
     [HideInInspector]
     public AudioSource source;
+
+    public void stop()
+    {
+        if(source.isPlaying)
+        source.Stop();
+    }
 }
