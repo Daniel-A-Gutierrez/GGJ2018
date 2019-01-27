@@ -3,8 +3,14 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
+[System.Serializable]
 public class Dialogue : MonoBehaviour
 {
+	public string name;
+	[TextArea(3,10)]
+	public string[] sentences;
+
+
     public string key;
     public string text;
     public int decisions;
@@ -27,3 +33,6 @@ public class Dialogue : MonoBehaviour
     }
 
 }
+
+
+//game manager keeps track of current dialogue and resources 

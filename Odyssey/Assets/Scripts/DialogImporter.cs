@@ -27,12 +27,6 @@ public class DialogManager : MonoBehaviour
             {
                 try{
                 string[] lineData  = (line.Trim()).Split(","[0]);
-                // string d1 = lineData ;
-                // string d2 = ;
-                // string d3 = ;
-                // string d4 = ;
-                // string d5 = ;
-                // string d6 = ;
 
                 Dialogue d = new Dialogue(lineData[0],lineData[1],int.Parse(lineData[2]),parseDecisions(lineData[3]),
                     lineData[4],AllActions[lineData[5]] );
