@@ -13,6 +13,9 @@ TagManager:
   - Continue Button
   - Monologue
   - 2Option1
+  - Day Bar
+  - Night Bar
+  - Fish List
   layers:
   - Default
   - TransparentFX
