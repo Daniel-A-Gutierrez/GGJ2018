@@ -16,6 +16,7 @@ TagManager:
   - Day Bar
   - Night Bar
   - Fish List
+  - Portrait
   layers:
   - Default
   - TransparentFX

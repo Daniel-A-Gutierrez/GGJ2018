@@ -22,6 +22,11 @@ public class dialogueManager : MonoBehaviour
 	private GameObject Option2;
 	private GameObject Option3;
 	private GameObject Option4;
+	public GameObject portraitGO;
+	public Sprite Gary_portrait;
+	public Sprite MC_portrait;
+	public Sprite Robert_portrait;
+	public Sprite Joe_portrait;
 
 	private Dialogue DialogA;
 	private Dialogue DialogB;
@@ -42,21 +47,25 @@ public class dialogueManager : MonoBehaviour
 		Option2 = GameObject.FindGameObjectWithTag("4Option2");
 		Option3 = GameObject.FindGameObjectWithTag("4Option3");
 		Option4 = GameObject.FindGameObjectWithTag("4Option4");
-		PrepareMonologue();
+		portraitGO = GameObject.FindGameObjectWithTag("Portrait");
     }
 
+	void setClipart()
+	{
+		if(currentDialogue.clipart == "")	{portraitGO.SetActive(false);}
+		else 
+		{
+			portraitGO.SetActive(true);
+			setPortrait(currentDialogue.clipart);
+		}
+	}
 
 	public void StartDialogue(Dialogue dialogue) 
 	{
 		currentDialogue = gd["1"];
-		PrepareMonologue();
-		//nameText.text = dialogue.name;
-		//foreach(string sentence in dialogue.sentences)
-		//{
-		//	sentences.Enqueue(sentence);
-		//}
-
 		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
+		PrepareMonologue();
+
 	}
 
 	public void DisplayNextSentence()
@@ -64,23 +73,23 @@ public class dialogueManager : MonoBehaviour
 		currentDialogue.Continue();
 		if(currentDialogue.decisions == -1)
 		{
+			PrepareMonologue();
 			EndDialogue();
 			return;
 		}
 		else if(currentDialogue.decisions == 0)
 		{
-			PrepareMonologue();
 			currentDialogue = gd[""+ currentDialogue.links[0]];
 			monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
-			//set the clipart
+			PrepareMonologue();
 		}
 		else if(currentDialogue.decisions==2)
 		{
-			Prepare2Choice();
 			DialogA = gd[""+ currentDialogue.links[0]];
 			DialogB = gd["" + currentDialogue.links[1]]; 
 			OptionA.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(DialogA.text);
 			OptionB.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(DialogB.text);
+			Prepare2Choice();
 			//get rid of current text
 			//hide ok button
 			//display hidden buttons/generate buttons using currentText.decisions as N
@@ -89,7 +98,7 @@ public class dialogueManager : MonoBehaviour
 		else if(currentDialogue.decisions==3) {Debug.Log("there is no 3 choice system");}
 		else if(currentDialogue.decisions==4)
 		{
-			Prepare4Choice();
+			
 			Dialog1 = gd[""+ currentDialogue.links[0]];
 			Dialog2 = gd["" + currentDialogue.links[1]]; 
 			Dialog3 = gd[""+ currentDialogue.links[2]];
@@ -99,9 +108,18 @@ public class dialogueManager : MonoBehaviour
 			Option2.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(Dialog2.text);
 			Option3.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(Dialog3.text);
 			Option4.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(Dialog4.text);
+			Prepare4Choice();
 		}
 		//if decisions = 0 , ok button and load next, and change buttons, etc.
 		//if decisions >0 load buttons with specific dialogues
+	}
+
+	public void setPortrait(string clipart)
+	{
+		if(clipart == "MC") {portraitGO.GetComponent<Image>().sprite = MC_portrait;}
+		if(clipart == "Gary") {portraitGO.GetComponent<Image>().sprite = Gary_portrait;}
+		if(clipart == "Joe") {portraitGO.GetComponent<Image>().sprite = Joe_portrait;}
+		if(clipart == "Robert") {portraitGO.GetComponent<Image>().sprite = Robert_portrait;}
 	}
 
 	void PrepareMonologue()
@@ -114,6 +132,9 @@ public class dialogueManager : MonoBehaviour
 		Option2.SetActive(false);
 		Option3.SetActive(false);
 		Option4.SetActive(false);
+
+		setClipart();
+
 	}
 
 	void Prepare2Choice()
@@ -126,6 +147,12 @@ public class dialogueManager : MonoBehaviour
 		Option2.SetActive(false);
 		Option3.SetActive(false);
 		Option4.SetActive(false);
+		if(DialogA.clipart == "")	{portraitGO.SetActive(false);}
+		else 
+		{
+			portraitGO.SetActive(true);
+			setPortrait(DialogA.clipart);
+		}
 	}
 
 	void Prepare4Choice()
@@ -138,51 +165,63 @@ public class dialogueManager : MonoBehaviour
 		Option2.SetActive(true);
 		Option3.SetActive(true);
 		Option4.SetActive(true);
+		if(Dialog1.clipart == "")	{portraitGO.SetActive(false);}
+		else 
+		{
+			portraitGO.SetActive(true);
+			setPortrait(Dialog1.clipart);
+		}
 	}
 	//remember to set the clipart
 	public void ButtonA()
 	{
-		PrepareMonologue();
 		currentDialogue = gd[""+ DialogA.links[0]];
 		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
+		PrepareMonologue();
 	}
 
 	public void ButtonB()
 	{
-		PrepareMonologue();
-		currentDialogue = gd[""+ DialogA.links[0]];
+		currentDialogue = gd[""+ DialogB.links[0]];
 		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
+		PrepareMonologue();
+
 	}
 
 	public void Button1()
 	{
-		PrepareMonologue();
 		currentDialogue = gd[""+ Dialog1.links[0]];
 		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
+		PrepareMonologue();
+
 	}
 	public void Button2()
 	{
-		PrepareMonologue();
 		currentDialogue = gd[""+ Dialog2.links[0]];
 		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
+		PrepareMonologue();
+
 	}
 	public void Button3()
 	{
-		PrepareMonologue();
 		currentDialogue = gd[""+ Dialog3.links[0]];
 		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
+		PrepareMonologue();
+
 	}
 	public void Button4()
 	{
-		PrepareMonologue();
 		currentDialogue = gd[""+ Dialog4.links[0]];
 		monologue.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(currentDialogue.text);
+		PrepareMonologue();
+
 	}
 	
 
 	void EndDialogue() //also hide text field, and all related elements.
 	{
 		Debug.Log("End of conversation");
+		portraitGO.SetActive(false);
 	}
 
 }

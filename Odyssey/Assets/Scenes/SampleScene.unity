@@ -2007,6 +2007,11 @@ MonoBehaviour:
   nameText: {fileID: 0}
   monologueText: {fileID: 0}
   currentDialogue: {fileID: 0}
+  portraitGO: {fileID: 0}
+  Gary_portrait: {fileID: 21300000, guid: a21d68791b9a53047aabe8dd6aea6b6d, type: 3}
+  MC_portrait: {fileID: 21300000, guid: 39f547b74591645498ace4da46e0503a, type: 3}
+  Robert_portrait: {fileID: 21300000, guid: 188669e84e38dad429398ca1575652f1, type: 3}
+  Joe_portrait: {fileID: 21300000, guid: 624c52b6eb5420849abc8430e9f26e8d, type: 3}
 --- !u!114 &683091764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2068,7 +2073,7 @@ GameObject:
   - component: {fileID: 754768357}
   m_Layer: 5
   m_Name: Portrait
-  m_TagString: Untagged
+  m_TagString: Portrait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2089,8 +2094,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -373.6, y: 1.29}
-  m_SizeDelta: {x: 106.9, y: 145.61}
+  m_AnchoredPosition: {x: -370, y: 0}
+  m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754768357
 MonoBehaviour:
