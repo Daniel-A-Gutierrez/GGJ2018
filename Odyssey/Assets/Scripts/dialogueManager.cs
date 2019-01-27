@@ -55,7 +55,8 @@ public class dialogueManager : MonoBehaviour
 			//get rid of current text
 			//hide ok button
 			//display hidden buttons/generate buttons using currentText.decisions as N
-			
+			//
+
 
 		}
 		//if decisions = 0 , ok button and load next, and change buttons, etc.
