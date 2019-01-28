@@ -13,5 +13,6 @@ public class SceneChanger : MonoBehaviour
         return;
         transform.Find(activeScene).gameObject.SetActive(false);
         transform.Find(toPlay).gameObject.SetActive(true);
+        activeScene=toPlay;
     }
 }
