@@ -47,7 +47,8 @@ public class AudioManager : MonoBehaviour
     		Debug.LogWarning("Sound " + name + " not found");
     		return;
     	}
-    	s.source.Play();
+		if(!s.source.isPlaying)
+    		s.source.Play();
     }
 
 	public void Stop (string name)
@@ -60,4 +61,20 @@ public class AudioManager : MonoBehaviour
     	}
     	s.stop();
 	}
+
+	public void StopEverythingBut(string name)
+	{
+		Sound s = Array.Find(sounds, sound => sound.name == name);
+    	if(s == null)        //catches the error where we try to access a clip that isn't there(or mispelled)
+    	{
+    		Debug.LogWarning("Sound " + name + " not found");
+    		return;
+    	}
+		foreach(Sound so in sounds)
+		{
+			if(so.name!=name)
+    			so.stop();
+		}
+	}
+	
 }

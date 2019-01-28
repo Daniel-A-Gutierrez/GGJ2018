@@ -9,6 +9,7 @@ public class DialogImporter : MonoBehaviour
 
 
     // Start is called before the first frame update
+    public Actions actions;
     public string dialogCsvPath;
     [HideInInspector]
     public Dictionary<string,Dialogue> GameDialog;
@@ -16,6 +17,7 @@ public class DialogImporter : MonoBehaviour
     //there will have to be a game manager to store all the flags
     void Awake()
     {
+        actions = GetComponent<Actions>();
         AllActions = new Dictionary<string,Action>();
         GameDialog = new Dictionary<string,Dialogue>();
         initializeActions();
@@ -29,12 +31,14 @@ public class DialogImporter : MonoBehaviour
                 string[] lineData  = (line.Trim()).Split(","[0]);
 
                 Dialogue d = new Dialogue(lineData[0],lineData[1],int.Parse(lineData[2]),parseDecisions(lineData[3]),
-                    lineData[4],AllActions[lineData[5]] );
+                    lineData[4],AllActions[lineData[5]],lineData[6],lineData[7] );
+                d.text.Replace('*',',');
                 GameDialog.Add(lineData[0],d);
                 }
-                catch(Exception e)
+                catch(FormatException f)
                 {
-                    Debug.LogError("Error parsing line: " + line + "\n" + e);
+                    Debug.Log(line);
+                    Debug.Log(f);
                 }
             }
         }
@@ -62,8 +66,8 @@ public class DialogImporter : MonoBehaviour
 
     void initializeActions()
     {
-        AllActions.Add("doNothing" , Actions.doNothing);
-        AllActions.Add("", Actions.doNothing);
+        AllActions.Add("doNothing" , actions.doNothing);
+        AllActions.Add("", actions.Default);
     }
 
 

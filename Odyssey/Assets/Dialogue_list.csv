@@ -1,0 +1,266 @@
+1,(A yacht silently moves southbound through the Atlantic Ocean. The sun beams bright with no clouds in sight. The murky sea appears calm.),0,2,,,DaytimeChatting,DeckJoeMaster
+2,Have you figured out where we’re headed?,0,3,Joe,,DaytimeChatting,
+3,I don’t know* I just want to travel and take photos...I just want to be away from home.,0,4,MC,,DaytimeChatting,
+4,That topic came up again* huh?,0,5,Joe,,DaytimeChatting,
+5,Yeah* but this time he’s serious about it. He even flew out from New York to visit me here* in Miami!,0,6,MC,,DaytimeChatting,
+6,No way?! But what’s so bad about accepting his offer anyways? You would have what everyone would kill for.,0,7,Joe,,DaytimeChatting,
+7,I already have all I could possibly want. If I go back* I’ll lose everything.,0,8,MC,,DaytimeChatting,
+8,Yeah* I guess you’re right. Loss of freedom for you would mean living without a life* huh?,0,9,Joe,,DaytimeChatting,
+9,Right...a life not worth living.,0,10,MC,,DaytimeChatting,
+10,You know what would be a good idea?! Lets go visit the Caribbeans!,0,11,Joe,,DaytimeChatting,
+11,Huh...that’s random but I’ll go tell the Captain.,0,12,MC,,DaytimeChatting,SSLightClearMaster
+12,Choosing the Engine Room,0,13,,,Daytime \ DoorOpenClose,EngineRoomLockedMaster
+13,The engine room is locked. I guess I’ll head back...,0,14,MC,,Daytime,SSLightClearMaster
+14,Choosing the Cabin,0,15,,,Daytime \ DoorOpenClose,CabinJoeMaster
+15,Joe is looking out the window.,0,16,,,Daytime,SSLightClearMaster
+16,Choosing Captain’s Quarters,0,17,,,Daytime \ DoorOpenClose,BridgeRobertMaster
+17,Robert looks very focused on his steering wheel...,0,18,MC,,Daytime,SSLightClearMaster
+18,,0,19,,,Daytime,TransitionOutMaster
+19,(A bright clear day with calm seas.),0,20,,,Daytime,SSLightClearMaster
+20,,0,21,,,Daytime \ DoorOpenClose,DeckJoeMaster
+21,Joe looks like he's enjoying the sea. Weather looks pretty good today...I hope it will stay like this for us to get to the Caribbeans safely.,0,22,MC,,Daytime,SSLightClearMaster
+22,,0,23,,,Daytime \ DoorOpenClose,EngineRoomLockedMaster
+23,Robert must’ve locked the door. I probably should check out other places. There’s nothing for me to do here anyways.,0,24,MC,,Daytime,SSLightClearMaster
+24,,0,25,,,Daytime \ DoorOpenClose,CabinAloneMaster
+25,I had good sleep last night. The day’s too young to go back to sleep.,0,26,MC,,Daytime,SSLightClearMaster
+26,,0,27,,,Daytime \ DoorOpenClose,BridgeRobertMaster
+27,Hey Cap.,0,28,MC,,DaytimeChatting,
+28,…,0,29,Robert,,DaytimeChatting,
+29,Looks like the weather is doing us a favor today* huh?,0,30,MC,,DaytimeChatting,
+30,(scoffs) You’d be a fool for underestimating the sea.,2,31\36,Robert,,DaytimeChatting,
+31,(Be nice),0,32,,,DaytimeChatting,
+32,Well* that's why you’re gonna make sure we get to the Carribeans safely right?,0,33,MC,,DaytimeChatting,
+33,…,0,34,Robert,,DaytimeChatting,
+34,So* ummm…what made you a man of the sea?,0,35,MC,,DaytimeChatting,
+35,I’m going down to the engine room to make sure the ship's engine is running how it’s supposed to.,0,42,Robert,,DaytimeChatting,
+36,(Be rude),0,37,,,DaytimeChatting,
+37,What do you think I’m hiring YOU for then? You should do your job and save the attitude so I can have a good time on this trip* OK?? I’ve had enough of old man b.s. already.,0,38,MC,,DaytimeChatting,
+38,…,0,39,Robert,,DaytimeChatting,
+39,Aren’t you gonna say something?,0,40,MC,,DaytimeChatting,
+40,I’m going down to the engine room to make sure the ship's engine is running how it’s supposed to. Aren’t you here to take photos? I suggest you go on the deck and take some photos while we still have this type of weather.,0,41,Robert,,DaytimeChatting,
+41,,0,42,,,NightTheme,TransitionOutMaster
+42,(The weather is cloudy and the sky grey. Creaking sounds can be heard throughout the boat with thunder rumbling in the sky.),0,43,,,NightTheme,SSLightNightMaster
+43,,0,44,,,NightTheme\ DoorOpenClose,BridgeAloneMaster
+44,The Captain's not in here right now. Bathroom break maybe?,0,45,MC,,NightTheme,SSLightNightMaster
+45,,0,46,,,NightTheme\ DoorOpenClose,DeckCloudyMaster
+46,I probably shouldn't stay out here. Seems like it’s about to rain soon.,0,47,MC,,NightTheme,SSLightNightMaster
+47,,0,48,,,NightTheme\ DoorOpenClose,CabinJoeMaster
+48,Joe is intensely gazing out the window. He seems to have something on his mind. I probably shouldn't bother him right now.,0,49,MC,,NightTheme,SSLightNightMaster
+49,,0,50,,,NightTheme\ DoorOpenClose,EngineRoomDay3Master
+50,Captain and Gary seem to be working on something. Neither of them are talking. Gary seems a bit annoyed whereas Robert looks expressionless.,0,51,,,NightTheme,
+51,(becomes aggitated after MC enters) Why did you come down here??,0,52,Robert,,NightChatting,
+52,I want to know why the ship has stopped. I went to look for you in your quarters* but no one answered so I came here. By the way* who is this??,0,53,MC,,NightChatting,
+53,The guy fixing your damned engine!,0,54,Gary,,NightChatting,
+54,Well* I was not informed about this. Rob* who is he? I thought my friend and I are the only one on board.,0,55,MC,,NightChatting,
+55,You thought wrong didn’t ya? Now* if you could do us a favor and leave us alone* I can fix this damn part so we can get going on our merry way! Sound okay?,2,56\61,Gary,,NightChatting,
+56,(Refuse and stay),0,57,,,NightChatting,
+57,Do you even know who I am?? How dare you talk to me like that! Robert? Say something!,0,58,MC,,NightChatting,
+58,Kid* we’re in the middle of the sea. A storm is coming and he’s the only shot we got at making this ship move. Go back to your cabin.,0,59,Robert,,NightChatting,
+59,The Captain said it. Now please* leave.,0,60,Gary,,NightChatting,
+60,(turns mad) Robert* let’s have a talk when you get back up to deck.,0,61,MC,,NightChatting,
+61,(Obey and leave),0,62,,,NightChatting,
+62,(sigh) If this is what it has come to...me needing a stowaway to fix the ship. If only you let me know sooner where you came from.,0,63,MC,,NightChatting,
+63,Why does that matter? Just know that I’m here now helping YOU out.,0,64,Gary,,NightChatting,
+64,I hate to admit it* but right now I need this man’s help to make it to the Caribbeans. Go on up and wait until this issue is resolved. We can worry about this man’s origin at another time.,0,65,Robert,,NightChatting,
+65,,0,66,,,NightChatting,TransitionOutMaster
+66,(Pouring rain and the sound of thunder rumbling can be heard.),0,67,,,Storm,SSLightNightBrokenMaster
+67,,0,68,,,Storm \ DoorOpenClose,DeckRainThunderMaster
+68,Why did I come out in the pouring rain? It’d be bad to get sick now.,0,69,MC,,Storm,SSLightNightBrokenMaster
+69,,0,70,,,Storm,EngingRoomLockedMaster
+70,Seems like the Captain has locked the door again. I can't believe that guy has been aboard this whole time! Even now! I should go see what the Captain has to say about this engine guy.,0,71,MC,,Storm,SSLightNightBrokenMaster
+71,,0,72,,,Storm \ DoorOpenClose,BridgeRobertMaster
+72,(The Captain seems very nervous as he tries to stay in control of the boat.),0,73,,,Storm,
+73,HEY CAP!,0,74,MC,,Storm,
+74,...,0,75,Robert,,Storm,
+75,ROBERT!,0,76,MC,,Storm,
+76,(turns around) ARE YOU OUT OF YOUR MIND?! GET BACK TO YOUR CABIN NOW!,2,77\85,Robert,,Storm,
+77,(Stay),0,78,,,Storm,
+78,Hey! I’m not gonna just sit here not knowing if we can make it out of this or not!,0,79,MC,,Storm,
+79,There’s no point arguing with you...Just keep your eyes open for anything that can harm the ship.,0,80,Robert,,Storm,
+80,And you better have a firm hold of that steering wheel. You’ve got 3 lives on your hands. I don’t want to die in the middle of nowhere!,0,81,MC,,Storm,
+81,Four. There are four people on this ship.,0,82,Robert,,Storm,
+82,Right...well...we still have to talk about that after we get out of this.,0,83,MC,,Storm,
+83,IF. If we get out of this...,0,84,Robert,,Storm,
+84,…...,0,85,MC,,Storm,
+85,(Go back),0,91,,,Storm,
+86,Okay. I’ll go back and make sure everyone else is staying dry* not that I’m afraid or anything...Hey uhh I just want to remind you* that 3 lives are in your hands...in-including your own* okay?!,0,87,MC,,Storm,
+87,Four. There are four people on this ship.,0,88,Robert,,Storm,
+88,I don’t care. You be-better make sure me and my friend get out of this safely.,0,89,MC,,Storm,
+89,Wish yourself some luck then.,0,90,Robert,,Storm,
+90,……,0,91,MC,,Storm,
+91,,0,92,,,Storm,TransitionOutMaster
+92,(Got through the storm* but the cloudy sky remains. On the other hand* the radio and navigation system are now dysfunctional.),0,93,,,NightTheme,SSLightNightMaster
+93,,0,94,,,NightTheme \ DoorOpenClose,CabinJoeMaster
+94,Joe remains intensely staring out the window,0,95,MC,,NightTheme,SSLightNightMaster
+95,,0,96,,,NightTheme,EngineRoomLockedMaster
+96,I don’t want to see that stowaway guy right now.,0,97,MC,,NightTheme,SSLightNightMaster
+97,,0,98,,,NightTheme \ DoorOpenClose,DeckCloudyJoeMaster
+98,I’m glad that we made it out of the storm.,0,99,Joe,,NightChatting,
+99,Yeah* me too man* me too.,0,100,MC,,NightChatting,
+100,Are you still sure about this? Running from your dad I mean.,0,101,Joe,,NightChatting,
+101,Yeah* I don’t want to be forced to live a life I don’t want.,0,102,MC,,NightChatting,
+102,But don’t you miss your home? In New York with your parents* enjoying a comfortable and lavish lifestyle?,0,103,Joe,,NightChatting,
+103,I never felt like that place was my home after I left for college. I realized there’s so much more that I can do and be than being held down by that boring company. I want to document my journey with every photograph I take. After my last trip to Alaska* I never felt more at home. I don’t want to be confined to one location in New York City.,0,104,MC,,NightChatting,
+104,It can’t be all that bad. Surely better than dying at sea.,2,105\108,Joe,,NightChatting,
+105,(Be a jerk),0,106,,,NightChatting,
+106,What are you even talking about? You agreed to come* don’t start with me. You thought I knew it’d be like this?,0,107,MC,,NightChatting,
+107,Chill out dude...forget that I even said anything.,0,136,Joe,,NightChatting,
+108,(Be depressing),0,109,,,NightChatting,
+109,Maybe you’re right...surely I did not see what happened yesterday coming. I should probably go check with Robert to see if the ship is in good shape.,0,110,MC,,NightChatting,
+110,Yeah that’s a good idea.,0,111,Joe,,NightTheme,SSLightNightMaster
+111,,0,112,,,NightTheme,BridgeRobertMaster
+112,Damn it! I thought I’d be dead. How’s the ship looking?,0,113,MC,,NightChatting,
+113,The storm damaged the ship. With what little materials and tools we have* the damage is irreparable.,0,114,Robert,,NightChatting,
+114,Are you serious? How bad is it?,0,115,MC,,NightChatting,
+115,The navigation system has been destroyed due to the heavy rain and lightning.,0,116,Robert,,NightChatting,
+116,Wait* what are you saying?,0,117,MC,,NightChatting,
+117,I'm saying that we cannot use the GPS like before.,0,118,Robert,,NightChatting,
+118,What?! You’ve got to be kidding! Just follow the north star or something. I don’t want to be stranded at sea! Figure it out* CAPTAIN!,0,119,MC,,NightChatting,
+119,Calm down* we’re still breathing. I’m still fairly familiar with this area however* you’d want to consider either going back or pushing forward to one of the Caribbean islands to restock our food supply. Currently* we have enough food for only two people to share.,2,120\127,Robert,,NightChatting,
+120,(Turn Back),0,121,,,NightChatting,
+121,What are our chances if we keep going?,0,122,MC,,NightChatting,
+122,The sea can be too unpredictable. I cannot give you my assurance.,0,123,Robert,,NightChatting,
+123,Some things aren't worth dying for* right?,0,124,MC,,NightChatting,
+124,...,0,125,Robert,,NightChatting,
+125,Let’s go back.,0,126,MC,,NightChatting,
+126,,0,9990,,,NightChatting,SSLightNightMaster
+127,(Keep going and ration food),0,128,,,NightChatting,
+128,Listen to yourself. You think I’m the kind of person to just give up midway? No way we’re going back* NO WAY!,0,129,MC,,NightChatting,
+129,Fair enough. But we won't be at the nearest island until tomorrow. How do you want to ration the food?,0,130\133,Robert,,NightChatting,
+130,(Keep food for yourself and give the other half to the Captain),0,131,,,NightChatting,
+131,Well I’m going to be taking one* and since you’re the Captain* you should eat.,0,132,MC,,NightChatting,
+132,Fair enough.,0,136,Robert,,NightChatting,
+133,(Keep food for yourself and give the other half to Joe),0,134,,,NightChatting,
+134,What do you mean how am I going to ration the food? Of course my buddy Joe and I will have to eat!,0,135,MC,,NightChatting,
+135,…,0,136,Robert,,NightChatting,
+136,,0,137,,,NightChatting,TransitionOutMaster
+137,(The crew arrives at a sunny island in search of food and fuel.),0,138,,,Island,DeckIslandMaster
+138,See? I told you we’ve got good luck. The sea is no place for me to die.,0,139,MC,,IslandChatting,
+139,Yeah* yeah. Let’s get something to eat* yeah? I’m starving here!,0,140,Joe,,IslandChatting,
+140,I will get us food and fuel. You can take a look around if you wish* but do not go far. Meet back here at 12PM.,0,141,Robert,,IslandChatting,
+141,You do what you gotta do Captain. I’m gonna go and take some photos around here. Hopefully* there won’t be any mishaps on this island.,0,142,MC,,IslandChatting,
+142,I was talking to Joe. Michael* you take care of the ship while I'm away.,0,143,Robert,,IslandChatting,
+143,Wait* what? Why would I do that? I’m finally in the Caribbeans. I want to take pictures!,0,144,MC,,IslandChatting,
+144,Trust me* you don’t want Gary to mess around on board the ship. I need someone to keep an eye on him for me.,0,145,Robert,,IslandChatting,
+145,Gary? Are you talking about the guy in the engine room?,0,146,MC,,IslandChatting,
+146,Yes.,0,147,Robert,,IslandChatting,
+147,Why don’t you take him with you then?,0,148,MC,,IslandChatting,
+148,What guy in the engine room? What are you guys talking about?,0,149,Joe,,IslandChatting,
+149,I don’t trust him but we need him for the ship in case anything breaks again.,0,150,Robert,,IslandChatting,
+150,For real? What is up with this guy? Is he like your prisoner?,0,151,MC,,IslandChatting,
+151,If he’s going to be a stowaway on my ship* least he could do is work for his spot.,2,152\155,Robert,,IslandChatting,
+152,(Watch over Gary to make sure he doesn’t run away),0,153,,,IslandChatting,
+153,Ugh* fine. I’ll go check on Gary and see what he has to say for himself. But I am still VERY curious about how he ended up on MY yacht.,0,154,MC,,IslandChatting,
+154,I’m going to get us some fuel now.,0,158,Robert,,IslandChatting,
+155,(Disregard Rob and take pictures around the island),0,156,,,IslandChatting,
+156,Man* you're worrying too much. Where could he possibly go? You can find anyone you want to watch that boat but I’m gonna have a good time and explore. I came all the way here* to the Caribbean! It’d be a shame if I don’t get to take pictures of this beautiful scenery.,0,157,MC,,IslandChatting,
+157,(MC and Joe leave the scene* Robert gets half the resources and rushes back to the boat with Gary still locked inside the engine room.),0,182,,,IslandChatting,TransitionOutMaster
+158,,0,159,,,DoorOpenClose \ Conflict,EngineRoomDay6StartMaster
+159,Hey Gary!,0,160,MC,,Conflict,
+160,Old dude told you my name* huh? What do you want?! Why are we stopping?!,0,161,Gary,,Conflict,
+161,I’m just surprised you're still alive. You know* for someone who is not even supposed to be on MY yacht.,0,162,MC,,Conflict,
+162,(scoffs) That's what you think. I assume you still haven’t had that conversation you wanted with our old friend up there yet?,0,163,Gary,,Conflict,
+163,No need for that now. You are going to tell me why you’re hiding on MY yacht.,0,164,MC,,Conflict,
+164,Not until you tell me where we are.,0,165,Gary,,Conflict,
+165,Fine. We are at a Caribbean island. I’m wasting my damn time figuring out what is up with you! Start talking.,0,166,MC,,Conflict,
+166,Or what? You’re going to shoot me?,0,167,Gary,,Conflict,
+167,That's not funny. Wait* what are you- !,0,168,MC,,Conflict,
+168,(Gary rushes toward MC but misses* he then runs towards the door* only to be pushed back inside with the Captain* who enters the room.),0,169,,,Conflict,EngineRoomDay6Master
+169,WHAT THE HELL IS UP WITH HIM?! I want you to explain this situation now!,0,170,MC,,Conflict,
+170,I’ll explain after we head up on deck. Now* (turns toward Gary) you may think it’s easy to get on this ship* but you can be damn sure I’ll be keeping you aboard until we return. I’m sure you know why.,0,171,Robert,,Conflict,
+171,So this is how you treat your lifesaver* huh?,0,172,Gary,,Conflict,
+172,Michael. Get back up there now and I will explain later.,0,173,Robert,,Conflict,
+173,But…,0,174,MC,,Conflict,
+174,NOW!,0,175,Robert,,Conflict,
+175,,0,176,,,Conflict,EngineRoomDay6.5Master
+176,So* you’re gonna tell him? That his precious little yacht has a murderer on board?,0,177,Gary,,Conflict,
+177,You’re not.,0,178,Robert,,Conflict,
+178,DON’T YOU DARE TRY TO PATRONIZE ME! You wanna say something like that* go tell my family or anybody else! See if they believe you!,0,179,Gary,,Conflict,
+179,I’m gonna leave you here to calm down a bit...here’s a sandwich. You should eat and get some rest.,0,180,Robert,,Conflict,
+180,…,0,181,Gary,,Conflict,
+181,,0,182,,,Conflict,TransitionOut
+182,,0,183,,,NightTheme,SSLightNightMaster
+183,,0,184,,,NightTheme \ DoorOpenClose,CabinJoeMaster
+184,It’s too early to turn in for bed. Let’s go check on how the Captain is doing.,0,185,MC,,NightTheme,SSLightNightMaster
+185,,0,186,,,NightTheme,EngineRoomLockedMaster
+186,I don’t want to talk to Gary right now* he’ll only worsen my mood.,0,187,MC,,NightTheme,SSLightNightMaster
+187,,0,188,,,NightTheme \ DoorOpenClose,BridgeAloneMaster
+188,Seems like the Captain is not in his room. I wonder where he went...,0,189,MC,,NightTheme,SSLightNightMaster
+189,,0,190,,,NightTheme,DeckRobertNightMaster
+190,Didn’t expect to find you here.,0,191,MC,,NightTheme,
+191,I...today’s the anniversary of my son’s death.,0,192,Robert,,NightTheme,
+192,Wow...um...I’m sorry. How...how did he die?,0,193,MC,,NightTheme,
+193,...,0,194,Robert,,NightTheme,
+194,I’m sorry. I shouldn’t have asked that. It’s not my place to question you.,0,195,MC,,NightTheme,
+195,No it’s okay. I’ve been running from it for too long. Now might be the time for me to face my inner demons...He died of cancer.,0,196,Robert,,NightTheme,
+196,Is this why you’re so far from home?,0,197,MC,,NightTheme,
+197,Far from home? (chuckles sadly) I don’t even remember what that place looks like anymore. I mean* we had this greenhouse and all I can remember now is a blurred image of it with my boy* with his face blurred* playing in the front yard.,0,198,Robert,,NightTheme,
+198,Don’t you ever think about going back?,0,199,MC,,NightTheme,
+199,Trust me* I do every single day. But what would that change? Now* here I am. 18 years on this ship feels more like home than any other place.,0,200,Robert,,NightTheme,
+200,You’re saying...home does not necessarily have to be a physical place?,0,201,MC,,NightTheme,
+201,Why would it be restricted to only physical places? If my son were here now* I would not want to go anywhere else. You see* it is never about where you are* but about how you feel when you are there.,0,202,Robert,,NightTheme,
+202,I’ve...never thought about home in that sense...,0,203,MC,,NightTheme,
+203,Trust me* I definitely didn’t have these thoughts in mind when I was your age either. I’m sure you’ve got some questions* right?,2,204\225,Robert,,NightTheme,
+204,(Ask about Gary),0,205,,,NightTheme,
+205,Yeah* about Gary.,0,206,MC,,NightTheme,
+206,I’m sure you’ve heard of a Gary Wong* am I correct?,0,207,Robert,,NightTheme,
+207,Gary Wong? Wait* no way! You’re talking about Gary Wong from the news who murdered his entire family 15 years ago?!,0,208,MC,,NightTheme,
+208,Yes. Before you panic* I want you to know that whatever you’ve heard about him before* from news or gossip* it’s all wrong.,0,209,Robert,,NightTheme,
+209,What do you mean it’s all wrong? There was evidence proving him guilty! What’s wrong with you?! Are you protecting him?!,0,210,MC,,NightTheme,
+210,I called the police.,0,211,Robert,,NightTheme,
+211,What?,0,212,MC,,NightTheme,
+212,The family. I was a friend of theirs. That October* I was on my way to visit them* only to see a Caucasian male rushing out the front door of the house before I entered.,0,213,Robert,,NightTheme,
+213,……,0,214,MC,,NightTheme,
+214,Found them there* still sitting on that couch* just never waking up again…,0,215,Robert,,NightTheme,
+215,I’m...I’m sorry about your friends…,0,216,MC,,NightTheme,
+216,Couldn’t believe my eyes* you know? The next thing I know* I heard the police were looking for some guy called Gary Wong. He's significantly shorter than the guy I saw* and skinnier too.,0,217,Robert,,NightTheme,
+217,So how did he end up here? Gary* I mean.,0,218,MC,,NightTheme,
+218,I’m sure you saw news about him getting arrested. Poor guy came out of jail two years ago* only to find his wife and kids living with another man.,0,219,Robert,,NightTheme,
+219,They didn’t…,0,220,MC,,NightTheme,
+220,Right. They thought he actually did it. Didn’t believe what he had to say and left him . So he went on a rampage* stealing* robbing* break-ins...but he never killed a single person. He was always on the run* and two days before you rented my boat* he broke in here and has been hiding ever since.,0,221,Robert,,NightTheme,
+221,This is why...he acted aggressively and wanted to leave.,0,222,MC,,NightTheme,
+222,This is what happens when you no longer have a home* or when you don’t know what it means to you anymore. Anyways* you’ve got your answers. I was able to fix the navigation systems today after resupplying. Tomorrow we can return to Florida safely.,0,223,Robert,,NightTheme,
+223,…Yeah* sounds good to me.,0,224,MC,,NightTheme,
+224,Now* let us all get some rest.,0,230,Robert,,NightTheme,
+225,(Rest),0,226,,,NightTheme,
+226,I’m feeling a bit tired now. I think I’ll go to bed now.,0,227,MC,,NightTheme,
+227,Fair enough. Also* I was able to fix the navigation system today* so tomorrow we can set sail safely.,0,228,Robert,,NightTheme,
+228,Fantastic. I was worried if we’d be able to get going anytime soon.,0,229,MC,,NightTheme,
+229,No need to worry. Now* try and get some rest.,0,230,Robert,,NightTheme,
+230,,0,231,,,NightTheme,TransitionOutMaster
+231,(The journey is coming to an end as we are only hours away from Florida.),0,232,,,Daytime,SSLightClearMaster
+232,,0,233,,,Daytime,EngineRoomLockedMaster
+233,The door is locked. Sounds of the engine running could be heard from the outside.,0,234,MC,,Daytime,SSLightClearMaster
+234,,0,235,,,Daytime \ DoorOpenClose,BridgeRobertMaster
+235,Hey there. I just want to apologize for being rude* and thank you for taking me on this trip. It’s been very meaningful in ways that I did not expect it to be.,0,236,MC,,DaytimeChatting,
+236,You’re welcome. You know* I wish I could’ve learned as much as you had when I was your age.,0,237,Robert,,DaytimeChatting,
+237,Well* our experiences make us who we are today* right? Can’t go back anyways.,0,238,MC,,Daytime,SSLightClearMaster
+238,,0,239,,,Daytime \ DoorOpenClose,DeckJoeMaster
+239,So* how you feeling Mike? Are you happy with what you got from this trip?,0,240,Joe,,DaytimeChatting,
+240,I think I’m feeling better with my decision. Honestly* I was anxious about this trip. Thanks for coming with me Joe.,0,241,MC,,DaytimeChatting,
+241,That’s what bros are for man. Plus* I got to experience places I never expected to ever visit in my life!,0,242,Joe,,DaytimeChatting,
+242,It feels liberating doesn’t it?,0,243,MC,,DaytimeChatting,
+243,Yeah it does. I’m starting to miss my home though. Nothing comes close to my mom’s home cooked dinner.,0,244,Joe,,DaytimeChatting,
+244,Yeah...I wish I could say the same. On the flip side* I think I can get used to living like this.,0,245,MC,,DaytimeChatting,
+245,What do you mean by that?,0,246,Joe,,DaytimeChatting,
+246,You know* being free and living without any expectations of you. Free from worry.,0,247,MC,,DaytimeChatting,
+247,I don’t know if I consider that MY lifestyle man* but whatever works for you. I’m glad you found your happiness.,0,248,Joe,,DaytimeChatting,
+248,Yeah* I think I’ve found something precious that I did not expect to.,0,249,MC,,DaytimeChatting,
+249,,0,250,,,Daytime,TransitionOutMaster
+250,,0,251,,,Daytime \ DoorOpenClose,DeckRobertMaster
+251,Have you decided on the course of this journey?,2,252\257,Robert,,DaytimeChatting,
+252,(Settle down somewhere),0,253,,,DaytimeChatting,
+253,Yeah. I want to settle down somewhere and keep pursuing my passion for photography. I took a lot of photos and hopefully* I can spread awareness about how destructive human behavior is to the oceans and islands.,0,254,MC,,DaytimeChatting,
+254,Young man* I’m glad you found a different and more fulfilling path for your life.,0,255,Robert,,DaytimeChatting,
+255,What do you mean?,0,256,MC,,DaytimeChatting,
+256,Nothing* it’s just some old man’s ramble.,0,9991,Robert,,DaytimeChatting,
+257,(Keep journeying with the Captain),0,258,,,DaytimeChatting,
+258,Yeah. I want to keep journeying with you on this ship. I love exploring the ocean and seeing new sights. This gives me a great opportunity for me to pursue my passion for photography too!,0,259,MC,,DaytimeChatting,
+259,I’m glad you chose to follow the same footsteps. I’m sure you won’t regret this decision* I give you my word.,0,260,Robert,,DaytimeChatting,
+260,Well* I can always leave even if it comes down to that.,0,261,MC,,DaytimeChatting,
+261,I’ll have to get used to the sound of silence again if that were to happen (sigh). I’m happy that I’m no longer alone.,0,262,Robert,,DaytimeChatting,
+262,And I’m happy I finally found somewhere I can call my home.,0,9992,MC,,DaytimeChatting,
+9990,After deciding to turn back* Michael returns to New York to work beneath his father. His daily mundane workstyle makes him more unmotivated each day* slowly losing his creative spark. He physically returns to a place called home but feels far from it. . .,0,9989,,,NightTheme,SSLightNightMaster
+9991,After deciding to settle down at the Caribbean in small straw bungalow* Michael consistently continues to take breathtaking photographs in the Caribbean environment. He hides behind the veil of anonymity as he posts his work and creation for others to see. Each support he gets reminds him that he’s on the right path. However* he has no one to share his photographs with given that he is isolated from his father* his crewmates* and the rest of society. . .,0,9989,,,NightTheme,SSLightNightMaster
+9992,After deciding to keep journeying with the Captain* Michael pursues his passion of photography surrounded by the people he has come to know* taking advantage of the ever-changing scenery the sea life has to offer. . .,0,9989,,,NightTheme,SSLightNightMaster
+9989,,1,1,,,,

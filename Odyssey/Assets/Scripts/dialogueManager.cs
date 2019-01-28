@@ -34,11 +34,19 @@ public class dialogueManager : MonoBehaviour
 	private Dialogue Dialog2;
 	private Dialogue Dialog3;
 	private Dialogue Dialog4;
+
+	public GameObject MasterCopies;
+	public AudioManager AM;
+	public Actions actions;
 	    // Start is called before the first frame update
     void Start()
     {
+
 		di=GetComponent<DialogImporter>();
 		gd= di.GameDialog;
+		MasterCopies = GameObject.Find("MasterCopies");
+		AM = GameObject.Find("Audio Manager").GetComponent<AudioManager>();
+		actions = GetComponent<Actions>();
 		monologue = GameObject.FindGameObjectWithTag("Monologue");
 		continueButton = GameObject.FindGameObjectWithTag("Continue Button");
 		OptionA = GameObject.FindGameObjectWithTag("2Option1");
@@ -48,6 +56,7 @@ public class dialogueManager : MonoBehaviour
 		Option3 = GameObject.FindGameObjectWithTag("4Option3");
 		Option4 = GameObject.FindGameObjectWithTag("4Option4");
 		portraitGO = GameObject.FindGameObjectWithTag("Portrait");
+		actions.getStarted();
 		StartDialogue();	
     }
 

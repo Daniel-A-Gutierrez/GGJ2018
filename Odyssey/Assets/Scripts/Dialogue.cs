@@ -18,7 +18,11 @@ public class Dialogue : MonoBehaviour
     public string clipart;
     public Action action;
 
-    public Dialogue(string key, string text, int decisions, int[] links, string clipart, Action action)
+    public string[] sounds;
+
+    public string scene2play;
+
+    public Dialogue(string key, string text, int decisions, int[] links, string clipart, Action action, string toparsesounds,string scene2play)
     {
         this.key = key;
         this.text = text;
@@ -26,6 +30,10 @@ public class Dialogue : MonoBehaviour
         this.links = links;
         this.clipart = clipart;
         this.action = action;
+        this.sounds = toparsesounds.Split('\\');
+        for(int i = 0 ; i < sounds.Length; i++)
+            sounds[i] = sounds[i].Trim();
+        this.scene2play = scene2play.Trim();
     }
     public void Continue()
     {

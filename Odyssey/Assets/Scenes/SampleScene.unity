@@ -3216,6 +3216,7 @@ GameObject:
   - component: {fileID: 683091762}
   - component: {fileID: 683091763}
   - component: {fileID: 683091764}
+  - component: {fileID: 683091765}
   m_Layer: 0
   m_Name: Dialogue Manager
   m_TagString: Untagged
@@ -3257,6 +3258,9 @@ MonoBehaviour:
   MC_portrait: {fileID: 21300000, guid: 39f547b74591645498ace4da46e0503a, type: 3}
   Robert_portrait: {fileID: 21300000, guid: 188669e84e38dad429398ca1575652f1, type: 3}
   Joe_portrait: {fileID: 21300000, guid: 624c52b6eb5420849abc8430e9f26e8d, type: 3}
+  MasterCopies: {fileID: 1833492763}
+  AM: {fileID: 0}
+  actions: {fileID: 0}
 --- !u!114 &683091764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3269,7 +3273,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87c87e42f865f074cb7184547be43201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogCsvPath: Test_Sheet.csv
+  actions: {fileID: 0}
+  dialogCsvPath: Dialogue_list.csv
+--- !u!114 &683091765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683091761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c83268f6c0f9a7449b7b09fb9d2d2ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dm: {fileID: 0}
 --- !u!1 &685806425
 GameObject:
   m_ObjectHideFlags: 0
@@ -4829,7 +4847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0.11372549, a: 0.3882353}
+  m_Color: {r: 0.10534118, g: 0.10534118, b: 0.25882354, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6123,7 +6141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1261779336
 Transform:
   m_ObjectHideFlags: 0
@@ -6722,7 +6740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0.11372549, a: 0.3882353}
+  m_Color: {r: 0.105882354, g: 0.105882354, b: 0.25882354, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7864,7 +7882,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1687217760
 Transform:
   m_ObjectHideFlags: 0
@@ -8257,6 +8275,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1833492764}
+  - component: {fileID: 1833492765}
   m_Layer: 0
   m_Name: MasterCopies
   m_TagString: Untagged
@@ -8301,6 +8320,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1833492765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833492763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 727095a1b2d0e424dbc807d846705340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startScene: DeckJoeMaster
+  activeScene: DeckJoeMaster
 --- !u!1001 &1857086912
 PrefabInstance:
   m_ObjectHideFlags: 0
