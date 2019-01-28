@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4216711961400491853
+--- !u!1 &1056966679981075327
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 78294161238746200}
-  - component: {fileID: 7543127771413272625}
+  - component: {fileID: 1863316182892533941}
+  - component: {fileID: 8529525676677481898}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &78294161238746200
+--- !u!4 &1863316182892533941
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4216711961400491853}
+  m_GameObject: {fileID: 1056966679981075327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 238.98615, y: 128.55417, z: -16.612675}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,13 +31,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7543127771413272625
+--- !u!114 &8529525676677481898
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4216711961400491853}
+  m_GameObject: {fileID: 1056966679981075327}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9c1b1cff9f4d604d9d975fbceb85f02, type: 3}
@@ -52,49 +52,55 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Conflict
     clip: {fileID: 8300000, guid: 5a933b644588e4497bc2ea2be23bbb8b, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Daytime
     clip: {fileID: 8300000, guid: 918197955b1c3433588a3b83b6778ed2, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: Daytime Chatting
+  - name: DaytimeChatting
     clip: {fileID: 8300000, guid: 4e6f0b25ff0b945a3afe9d0c0e83c98c, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: Door
+  - name: DoorOpenClose
     clip: {fileID: 8300000, guid: 877521ad5fe574711b5394965c1d8a98, type: 3}
     volume: 0.5
-    pitch: 1
+    pitch: 0.54
     loop: 0
     source: {fileID: 0}
   - name: Island
     clip: {fileID: 8300000, guid: 253cec25fc77b432db0d6ec595e277eb, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: Island Chatting
+  - name: IslandChatting
     clip: {fileID: 8300000, guid: dc7bc403b832a4a7d9c467d5acf3e40c, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: Night Theme
+  - name: NightTheme
     clip: {fileID: 8300000, guid: fa3ff4ca90e5543c697c9ac983359ffb, type: 3}
-    volume: 0.5
+    volume: 0.1
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Storm
     clip: {fileID: 8300000, guid: c191ce5e2f5ec4a24bafec29e6b09641, type: 3}
-    volume: 0.5
+    volume: 0.3
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: NightChatting
+    clip: {fileID: 8300000, guid: 833827fad80b74561a4e6951be646179, type: 3}
+    volume: 0.3
     pitch: 1
     loop: 1
     source: {fileID: 0}
