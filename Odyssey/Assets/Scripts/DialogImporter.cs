@@ -30,9 +30,8 @@ public class DialogImporter : MonoBehaviour
                 try{
                 string[] lineData  = (line.Trim()).Split(","[0]);
 
-                Dialogue d = new Dialogue(lineData[0],lineData[1],int.Parse(lineData[2]),parseDecisions(lineData[3]),
+                Dialogue d = new Dialogue(lineData[0],lineData[1].Replace("ZXZ",","),int.Parse(lineData[2]),parseDecisions(lineData[3]),
                     lineData[4],AllActions[lineData[5]],lineData[6],lineData[7] );
-                d.text.Replace('*',',');
                 GameDialog.Add(lineData[0],d);
                 }
                 catch(FormatException f)
