@@ -368,6 +368,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4883032707301049018}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &706105656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706105654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a765d9c8893022c4e838610655a34a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &779760920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,6 +1327,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
       value: Click
       objectReference: {fileID: 0}
+    - target: {fileID: 4883032706992320248, guid: 27183caa55da9ed4293bdfaf824dd72c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883032706992320248, guid: 27183caa55da9ed4293bdfaf824dd72c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883032706992320248, guid: 27183caa55da9ed4293bdfaf824dd72c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 706105656}
     - target: {fileID: 4883032707924190712, guid: 27183caa55da9ed4293bdfaf824dd72c,
         type: 3}
       propertyPath: m_havePropertiesChanged
