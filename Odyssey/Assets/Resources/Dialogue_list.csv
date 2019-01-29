@@ -178,7 +178,7 @@
 178,DONT YOU DARE TRY TO PATRONIZE ME! You wanna say something like thatZXZ go tell my family! See if they believe you!,0,179,Gary,,Conflict,,
 179,Im gonna leave you here to calm down a bit...heres a sandwich. You should eat and get some rest.,0,180,Robert,,Conflict,,
 180, . . . ,0,181,Gary,,Conflict,,
-181,,0,182,,,Conflict,TransitionOut,
+181,,0,182,,,Conflict,TransitionOutMaster,
 182,,0,183,,,NightTheme,SSLightNightMaster,
 183,,0,184,,,NightTheme \ DoorOpenClose,CabinJoeMaster,
 184,Its too early to turn in for bed. Lets go check on how the Captain is doing.,0,185,MC,,NightTheme,SSLightNightMaster,
