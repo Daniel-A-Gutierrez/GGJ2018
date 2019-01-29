@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.IO;
 public class DialogImporter : MonoBehaviour
 {
 
@@ -21,7 +22,14 @@ public class DialogImporter : MonoBehaviour
         AllActions = new Dictionary<string,Action>();
         GameDialog = new Dictionary<string,Dialogue>();
         initializeActions();
-        string fileData  = System.IO.File.ReadAllText( Application.dataPath + "\\" + dialogCsvPath);
+
+        // using(StringReader reader = new StringReader( new MemoryStream( (Resources.Load("Dialogue_list.csv") as TextAsset) ) ) )
+        // {
+
+        // }
+        //string fileData  = System.IO.File.ReadAllText( Application.dataPath + "\\" + dialogCsvPath);
+        byte[] bytes = (Resources.Load<TextAsset>("Dialogue_list").bytes)  ;
+        string fileData = (System.Text.Encoding.UTF8.GetString(bytes));
         string[] lines  = fileData.Split("\n"[0]);
         foreach(string line in lines)
         {
